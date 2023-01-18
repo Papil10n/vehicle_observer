@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import './scss/App.scss';
+import {Route, Routes} from "react-router-dom";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import Moto from "./components/Moto/Moto";
+import Helicopters from "./components/Helicopters/Helicopters";
+import Aircraft from "./components/Aircraft/Aircraft";
+import CarsContainer from "./components/Cars/CarsContainer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="wrapper">
+            <div className="mainContainer">
+                <Header/>
+                <main className="main">
+                    <Routes>
+                        <Route path="/" element={<Home />}/>
+                        <Route path="/cars" element={<CarsContainer />}/>
+                        <Route path="/moto" element={<Moto />}/>
+                        <Route path="/helicopters" element={<Helicopters />}/>
+                        <Route path="/aircraft" element={<Aircraft />}/>
+                    </Routes>
+                </main>
+            </div>
+        </div>
+
+    );
 }
 
 export default App;

@@ -1,0 +1,80 @@
+.car-article {
+  height: 200px;
+  border: 3px solid #025E73;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding-inline: 10px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.car__title {
+  flex: 0 1 180px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.car__image {
+  width: 135px;
+  height: 135px;
+
+  background: #BFB78F;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+.car__name {
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Joti One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+.car__specs {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.spec {
+  margin-bottom: 13px;
+}
+.spec__name {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-shadow: 1px 0 1px #000000,
+  0 1px 1px #000000,
+  -1px 0 1px #000000,
+  0 -1px 1px #000000;
+  margin-right: 7px;
+}
+.main__spec {
+  flex: 1 1 450px;
+}
+.fuel__spec {
+  flex: 1 1 350px;
+}
+.spec-abs {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  & .spec__name {
+    font-size: 18px;
+  }
+  & .spec__value {
+    font-size: 18px;
+  }
+}
+.spec__value {
+  font-family: 'K2D';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+}
