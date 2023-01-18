@@ -1,12 +1,11 @@
 import "./carInfo.scss";
 
-const CarInfo = ({spec}) => {
-
+const CarInfo = ({spec,name}) => {
 
     return <article className="car-article">
             <div className="car__title">
-                <div className="car__image"></div>
-                <div className="car__name">Toyota Rav4</div>
+                <div className="car__image">No Image</div>
+                <div className="car__name">{name}</div>
             </div>
             <div className="car__specs">
                 <div className="main__spec">
