@@ -1,5 +1,4 @@
 import axios from "axios";
-import cars from "../components/Cars/Cars";
 
 const API_KEY = "apikey=pYFlAVIXjLOca5xS1RtMfxJrYaBCbZRN54Nh72J4";
 
@@ -11,10 +10,9 @@ const instance = axios.create({
 });
 
 export const carsAPI = {
-    getCars: (line) => {
-        return instance(`/cars?${line}&limit=8`)
+    getCars: (data) => {
+        return instance(`/cars?${data}&limit=8`)
             .then(response => response.data);
     },
-
 }
 

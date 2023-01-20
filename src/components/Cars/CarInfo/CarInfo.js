@@ -1,10 +1,12 @@
 import "./carInfo.scss";
+import noImage from '../../../image/noCar.png';
 
-const CarInfo = ({spec,name}) => {
-
+const CarInfo = ({spec,name, photo}) => {
     return <article className="car-article">
             <div className="car__title">
-                <div className="car__image">No Image</div>
+                <div className="car__image">
+                    <img className={photo ? "default" : "empty"  } src={photo ? photo : noImage} />
+                </div>
                 <div className="car__name">{name}</div>
             </div>
             <div className="car__specs">

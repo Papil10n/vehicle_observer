@@ -60,6 +60,7 @@
   -2px 0 2px #000000,
   0 -2px 2px #000000;
   transition: all ease 0.2s;
+  user-select: none;
   &:hover  {
     text-shadow: 5px 0 5px #000000,
     0 5px 5px #000000,

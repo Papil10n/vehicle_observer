@@ -5,7 +5,7 @@ const Header = (props) => {
     return <header className="header">
         <div className="header__container">
             <div className="header__logo">
-                <NavLink className="header__logo-name" to="/">Vehicle Observer</NavLink>
+                <div className="header__logo-name">Vehicle Observer</div>
             </div>
             <nav className="header__nav">
                 <ul className="header__list">

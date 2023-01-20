@@ -19,6 +19,7 @@ function App() {
                         <Route path="/moto" element={<Moto />}/>
                         <Route path="/helicopters" element={<Helicopters />}/>
                         <Route path="/aircraft" element={<Aircraft />}/>
+                        {/*<Route path="/*" element={<ErrorPage />}/>*/}
                     </Routes>
                 </main>
             </div>
