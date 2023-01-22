@@ -1,8 +1,19 @@
 import {connect} from "react-redux";
 import Cars from "./Cars";
+import {setCurrentPage, setPortionCars, toggleCarPortion} from "../../redux/cars-reducer";
 
 const CarsContainer = (props) => {
-    return <Cars cars={props.cars} name={`${props.brand} ${props.model}`} isEmpty={props.isEmpty}/>
+
+    const onChange = (page) => {
+        const carsCont = document.querySelector(".presets__button");
+        props.toggleCarPortion(page, props.pageSize, props.cars)
+        carsCont.scrollIntoView({
+            behavior:"smooth",
+            block:"start",
+        })
+    }
+
+    return <Cars portionCars={props.portionCars} onChange={onChange} currentPage={props.currentPage} totalCarsCount={props.totalCarsCount} pageSize={props.pageSize} name={`${props.brand} ${props.model}`} isEmpty={props.isEmpty}/>
 }
 
 const mstp = (state) => {
@@ -11,7 +22,12 @@ const mstp = (state) => {
         brand: state.cars.specs.brand,
         model: state.cars.specs.model,
         isEmpty: state.cars.isEmpty,
+        pageSize: state.cars.pageSize,
+        totalCarsCount: state.cars.totalCarsCount,
+        currentPage: state.cars.currentPage,
+        portionCars: state.cars.portionCars,
+
     }
 }
 
-export default connect(mstp, {})(CarsContainer);
+export default connect(mstp, {toggleCarPortion})(CarsContainer);
