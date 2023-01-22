@@ -5,6 +5,9 @@ const betterUI = {
         } else {
             return string;
         }
+    },
+    number: (num, lengthAD) => {
+        return +num.toFixed(lengthAD);
     }
 }
 

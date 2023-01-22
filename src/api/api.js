@@ -11,7 +11,7 @@ const instance = axios.create({
 
 export const carsAPI = {
     getCars: (data) => {
-        return instance(`/cars?${data}&limit=8`)
+        return instance(`/cars?${data}&limit=50`)
             .then(response => response.data);
     },
 }

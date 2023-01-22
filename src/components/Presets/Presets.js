@@ -67,7 +67,7 @@ const Presets = (props) => {
                         <div className="item__text">Fuel:</div>
                         <div className="item__input">
                             <select value={fuel} onInput={(e) => {settingValue("fuel",e)}} className="input">
-                                <option value="none"></option>
+                                <option value=""></option>
                                 <option value="gas">Gas</option>
                                 <option value="diesel">Diesel</option>
                                 <option value="electricity">Electricity</option>
@@ -80,7 +80,7 @@ const Presets = (props) => {
                         <div className="item__text">Transmission:</div>
                         <div className="item__input">
                             <select value={transmission} onInput={(e) => {settingValue("transmission",e)}} className="input input-small">
-                                <option value="none"></option>
+                                <option value=""></option>
                                 <option value="awd">AWD</option>
                                 <option value="4wd">4WD</option>
                                 <option value="fwd">FWD</option>
@@ -92,7 +92,7 @@ const Presets = (props) => {
                         <div className="item__text">Cylinders:</div>
                         <div className="item__input">
                             <select value={cylinders} onInput={(e) => {settingValue("cylinders",e)}} className="input input-medium">
-                                <option value="none"></option>
+                                <option value=""></option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>

@@ -3,7 +3,9 @@ import "../../scss/cars.scss";
 import PresetsContainer from "../Presets/PresetsContainer";
 
 const Cars = (props) => {
-    const carItems = props.cars.map((car,i)=> <CarInfo key={i} spec={car} photo={props.photo} name={props.name} /> ) ;
+    const carItems = props.cars.map((car,i)=> <CarInfo key={i} spec={car} name={props.name} /> )
+        .reverse();
+
 
     return <section className="cars">
         <PresetsContainer />
