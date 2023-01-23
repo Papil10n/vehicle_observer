@@ -1,5 +1,5 @@
-import "./carInfo.scss";
 import betterUI from "../../../utils/betterUI";
+import "../../../scss/carInfo.scss";
 
 const CarInfo = ({spec}) => {
 

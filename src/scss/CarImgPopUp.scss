@@ -14,6 +14,10 @@
       scale: 0.95;
     }
   }
+  @media (max-width: 1200px) {
+    visibility: hidden;
+    display: none;
+  }
 }
 .closed {
   left: 20px;
