@@ -1,8 +1,9 @@
 .cars {
-
+  position: relative;
 }
 .cars__container {
   max-width: 867px;
+  min-height: 200px;
   margin: 0 auto;
 }
 .empty {

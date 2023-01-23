@@ -8,12 +8,14 @@ const CarsContainer = (props) => {
         const carsCont = document.querySelector(".presets__button");
         props.toggleCarPortion(page, props.pageSize, props.cars)
         carsCont.scrollIntoView({
-            behavior:"smooth",
-            block:"start",
+            behavior: "smooth",
+            block: "start",
         })
     }
 
-    return <Cars portionCars={props.portionCars} onChange={onChange} currentPage={props.currentPage} totalCarsCount={props.totalCarsCount} pageSize={props.pageSize} name={`${props.brand} ${props.model}`} isEmpty={props.isEmpty}/>
+    return <Cars portionCars={props.portionCars} onChange={onChange} currentPage={props.currentPage}
+                 totalCarsCount={props.totalCarsCount} pageSize={props.pageSize} name={`${props.brand} ${props.model}`}
+                 isEmpty={props.isEmpty} isFetching={props.isFetching}/>
 }
 
 const mstp = (state) => {
@@ -26,7 +28,7 @@ const mstp = (state) => {
         totalCarsCount: state.cars.totalCarsCount,
         currentPage: state.cars.currentPage,
         portionCars: state.cars.portionCars,
-
+        isFetching: state.cars.isFetching,
     }
 }
 
