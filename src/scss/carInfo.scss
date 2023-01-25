@@ -1,10 +1,12 @@
 .car-article {
-  padding-top: 20px;
-  border: 3px solid #025E73;
+  padding-block: 20px;
+  border: 1px solid #1b1f24;
+  border-right: none;
+  border-left: none;
+  background: #c2c7d0;
   border-radius: 15px;
   padding-inline: 10px;
   margin: 20px auto;
-  max-width: 660px;
   @media (max-width: 700px) {
     margin-inline: 10px;
   }
