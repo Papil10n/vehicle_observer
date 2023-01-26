@@ -4,20 +4,22 @@
     align-items: center;
 }
 .pages__container {
-    //border: 1px solid black;
+    max-width: 700px;
+    margin: 0 auto;
     padding: 5px;
     border-radius: 10px;
-    width: 30%;
     text-align: center;
 }
 .page__selected {
-    font-size: 25px;
+    font-size: 27px;
     display: inline-block;
     margin-inline: 10px;
     padding: 1px 9px;
     font-family: Algerian;
     cursor: pointer;
-    text-shadow: 6px 0 6px #000000, 0 6px 6px #000000, -6px 0 6px #000000, 0 -6px 6px #000000;
+    text-shadow: 6px 0 6px #FFFFFF, 0 6px 6px #FFFFFF, -6px 0 6px #FFFFFF, 0 -6px 6px #FFFFFF;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 .page {
     font-size: 25px;
@@ -26,21 +28,22 @@
     padding: 1px 9px;
     border-radius: 50%;
     cursor: pointer;
-    text-shadow: 1px 0 1px #000000, 0 1px 1px #000000, -1px 0 1px #000000, 0 -1px 1px #000000;
+    text-shadow: 6px 0 6px #FFFFFF, 0 6px 6px #FFFFFF, -6px 0 6px #FFFFFF, 0 -6px 6px #FFFFFF;
 }
 .toggleBtn {
-    background: none;
-    color: white;
-    border: 1px solid white;
+    color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid black;
     font-size: 20px;
     border-radius: 15px;
     padding: 5px;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 .toggleBtn:hover {
-    background-color: #00cfff;
+    background-color: #c2c7d0;
     color: black;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid white;
 }
 .toggleBtn:active {
     transform: scale(0.9);

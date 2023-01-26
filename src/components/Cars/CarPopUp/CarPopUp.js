@@ -2,6 +2,7 @@ import "../../../scss/CarImgPopUp.scss";
 import {connect} from "react-redux";
 import {changePopUpMode} from "../../../redux/cars-reducer";
 
+
 const CarPopUp = (props) => {
 
     const [brand, model] = props.name.split(" ");
@@ -12,7 +13,7 @@ const CarPopUp = (props) => {
             {!props.isOpened ?
                 <button onClick={() => {
                     props.isPopUpOpen(true)
-                }} className="popUp__closedBtn">Show photo of latest car</button> :
+                }} className="popUp__closedBtn closedBtn">Show photo of latest car</button> :
                 <div className="content">
                     <button onClick={() => {
                         props.isPopUpOpen(false)
@@ -34,7 +35,6 @@ const CarPopUp = (props) => {
 const CarPopUpContainer = (props) => {
 
     const isPopUpOpen = (mode) => {
-        document.body.classList.toggle('fixed');
         const carImg = document.querySelector(".presets__btn");
         carImg.scrollIntoView({top:0,behavior:'smooth'})
 

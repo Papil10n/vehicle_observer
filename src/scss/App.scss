@@ -72,7 +72,7 @@
     transition: left 0.2s;
     &._active {
       left: 0;
-      background-color: rgba(213, 208, 189, 0.56);
+      background-color: rgb(255,255,255,0.85);
     }
   }
   &-icon {
@@ -126,6 +126,7 @@
       margin: auto;
       & li {
         margin: 20px;
+        border: 1px solid black;
         & .header__link {
           font-size: 35px;
         }
