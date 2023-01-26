@@ -1,7 +1,7 @@
-import "../../scss/presets.scss";
+import "./presets.scss";
 import {useState} from "react";
-import validate from "../../utils/validators/validatePresets";
-import betterUI from "../../utils/betterUI";
+import validate from "../../../utils/validators/validatePresets";
+import betterUI from "../../../utils/betterUI";
 
 const Presets = (props) => {
     let [brand, setBrand] = useState("")
@@ -42,17 +42,17 @@ const Presets = (props) => {
     return <div className="presets">
         <div className="presets__container">
             <div className="presets__sections">
-                <div className="presets__section main-section">
+                <div className="presets__section">
                     <div className="presets__item">
                         <div className="item__text">Brand:</div>
                         <div className="item__input">
-                            <input value={brand} onInput={(e) => {settingValue("brand",e)}} className="input" type="text"/>
+                            <input value={brand} onInput={(e) => {settingValue("brand",e)}} className="input" placeholder="required" type="text"/>
                         </div>
                     </div>
                     <div className="presets__item">
                         <div className="item__text">Model:</div>
                         <div className="item__input">
-                            <input value={model} onInput={(e) => {settingValue("model",e)}} className="input" type="text"/>
+                            <input value={model} onInput={(e) => {settingValue("model",e)}} className="input" placeholder="required" type="text"/>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ const Presets = (props) => {
                 </div>
             </div>
             <div className="presets__button">
-                <button onClick={searchAction} className="presets__btn">Search</button>
+                <button onClick={searchAction} className="presets__btn searchBtn">Search</button>
             </div>
         </div>
     </div>

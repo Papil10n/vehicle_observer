@@ -2,10 +2,11 @@ import './scss/App.scss';
 import {Route, Routes} from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
-import Moto from "./components/Moto/Moto";
 import Helicopters from "./components/Helicopters/Helicopters";
 import Aircraft from "./components/Aircraft/Aircraft";
 import CarsContainer from "./components/Cars/CarsContainer";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
+import MotoContainer from "./components/Moto/MotoContainer";
 
 function App() {
     return (
@@ -16,10 +17,10 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home />}/>
                         <Route path="/cars" element={<CarsContainer />}/>
-                        <Route path="/moto" element={<Moto />}/>
+                        <Route path="/moto" element={<MotoContainer />}/>
                         <Route path="/helicopters" element={<Helicopters />}/>
                         <Route path="/aircraft" element={<Aircraft />}/>
-                        {/*<Route path="/*" element={<ErrorPage />}/>*/}
+                        <Route path="/*" element={<ErrorPage />}/>
                     </Routes>
                 </main>
             </div>

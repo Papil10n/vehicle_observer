@@ -1,4 +1,4 @@
-import "../../../scss/CarImgPopUp.scss";
+import "./CarPopUp.scss";
 import {connect} from "react-redux";
 import {changePopUpMode} from "../../../redux/cars-reducer";
 

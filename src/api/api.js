@@ -9,9 +9,13 @@ const instance = axios.create({
     }
 });
 
-export const carsAPI = {
+export const API = {
     getCars: (data) => {
         return instance(`/cars?${data}&limit=50`)
+            .then(response => response.data);
+    },
+    getMotos: (data) => {
+        return instance(`/motorcycles?${data}`)
             .then(response => response.data);
     },
 }

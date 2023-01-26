@@ -1,3 +1,4 @@
+import "./Header.scss";
 import {NavLink} from "react-router-dom";
 import {useEffect} from "react";
 
@@ -6,13 +7,11 @@ const Header = (props) => {
     useEffect(()=>{
         const burger = document.querySelector('.menu-icon');
         const menu = document.querySelector('.menu');
-        const body = document.body
 
         if (burger && menu) {
             burger.addEventListener('click', () => {
                 burger.classList.toggle('_active');
                 menu.classList.toggle('_active');
-                body.classList.toggle('_lock');
             })
         }
     })

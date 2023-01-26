@@ -1,6 +1,6 @@
 import Presets from "./Presets";
 import {connect} from "react-redux";
-import {searchCars} from "../../redux/cars-reducer";
+import {searchCars} from "../../../redux/cars-reducer";
 
 const PresetsContainer = (props) => {
 

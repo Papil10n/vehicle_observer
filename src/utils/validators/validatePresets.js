@@ -9,7 +9,7 @@ const validate = {
     isModelValid: (spec) => {
         let isEq = false
         spec.split("").forEach(item => {
-            if (/[^a-zA-Z\d]/.test(item)) isEq = true;
+            if (/[^a-zA-Z0-9\d]/.test(item)) isEq = true;
         })
         return !(spec.trim().length > 20 || spec.length < 0 || isEq);
     },

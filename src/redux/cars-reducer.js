@@ -1,5 +1,5 @@
 // imports
-import {carsAPI} from '../api/api'
+import {API} from '../api/api'
 import createReqLine from "../utils/createReqLine";
 
 // action mode
@@ -25,7 +25,6 @@ let initialState = {
     isCars: false,
     isPopUpShowing: false,
     isFetching: false,
-    isPopUpImgLoading: false,
 }
 
 // reducer
@@ -74,9 +73,9 @@ export const searchCars = (specs) => async (dispatch) => {
     dispatch(setIsFetching(true));
     dispatch(changeSpec(specs));
 
-    const reqLine = createReqLine(specs);
+    const reqLine = createReqLine.car(specs);
     if (reqLine) {
-        const data = await carsAPI.getCars(reqLine);
+        const data = await API.getCars(reqLine);
         if (data.length > 0) {
             dispatch(setCars(data.reverse()));
             dispatch(setPortionCars(data.slice(0, initialState.pageSize)))

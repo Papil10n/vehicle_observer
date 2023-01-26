@@ -1,0 +1,14 @@
+.error {
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 10px;
+  }
+  &__title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-family: "JetBrains Mono", monospace;
+  }
+}
