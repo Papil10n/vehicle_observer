@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/vehicle_observer/static/css/main.f52ca4cf.css",
-    "main.js": "/vehicle_observer/static/js/main.d5642d97.js",
+    "main.css": "/vehicle_observer/static/css/main.ef7a5199.css",
+    "main.js": "/vehicle_observer/static/js/main.df0ca8fb.js",
     "static/media/preloaderIco.gif": "/vehicle_observer/static/media/preloaderIco.e00d44f499cbb58f0297.gif",
     "index.html": "/vehicle_observer/index.html",
-    "main.f52ca4cf.css.map": "/vehicle_observer/static/css/main.f52ca4cf.css.map",
-    "main.d5642d97.js.map": "/vehicle_observer/static/js/main.d5642d97.js.map"
+    "main.ef7a5199.css.map": "/vehicle_observer/static/css/main.ef7a5199.css.map",
+    "main.df0ca8fb.js.map": "/vehicle_observer/static/js/main.df0ca8fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.f52ca4cf.css",
-    "static/js/main.d5642d97.js"
+    "static/css/main.ef7a5199.css",
+    "static/js/main.df0ca8fb.js"
   ]
 }
