@@ -13,7 +13,9 @@ const MotoContainer = (props) => {
         })
     }
 
-    return <Moto portionMotos={props.portionMotos} onChange={onChange} currentPage={props.currentPage} pageSize={props.pageSize} totalMotosCount={props.totalMotosCount} isEmpty={props.isEmpty} isFetching={props.isFetching}/>
+    return <Moto portionMotos={props.portionMotos} onChange={onChange} currentPage={props.currentPage}
+                 pageSize={props.pageSize} totalMotosCount={props.totalMotosCount} isEmpty={props.isEmpty}
+                 isFetching={props.isFetching}/>
 }
 
 const mstp = (state) => {

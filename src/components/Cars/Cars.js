@@ -11,15 +11,15 @@ const Cars = (props) => {
         <PresetsContainer/>
         <CarPopUp name={props.name}/>
         {props.isEmpty ? <div className="empty">THERE ARE NO CARS, MAYBE YOU HAVE SET THE INCORRECT PARAMETERS</div> :
-                props.isFetching ? <Preloader/> : <div>
-                    <div className="cars__container">
-                        {carItems}
-                    </div>
-                    <Paginator totalItemsCount={props.totalCarsCount} pageSize={props.pageSize}
-                               onPageChanged={props.onChange}
-                               currentPage={props.currentPage}/>
+            props.isFetching ? <Preloader/> : <div>
+                <div className="cars__container">
+                    {carItems}
                 </div>
-            }}
+                <Paginator totalItemsCount={props.totalCarsCount} pageSize={props.pageSize}
+                           onPageChanged={props.onChange}
+                           currentPage={props.currentPage}/>
+            </div>
+        }}
     </section>;
 }
 export default Cars;
