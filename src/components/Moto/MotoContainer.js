@@ -1,6 +1,6 @@
 import Moto from "./Moto";
 import {connect} from "react-redux";
-import {toggleMotoPortion} from "../../redux/moto-reducer";
+import {searchMotos, toggleMotoPortion} from "../../redux/moto-reducer";
 
 const MotoContainer = (props) => {
 
@@ -14,7 +14,7 @@ const MotoContainer = (props) => {
     }
 
     return <Moto portionMotos={props.portionMotos} onChange={onChange} currentPage={props.currentPage}
-                 pageSize={props.pageSize} totalMotosCount={props.totalMotosCount} isEmpty={props.isEmpty}
+                 pageSize={props.pageSize} searchMotos={props.searchMotos} totalMotosCount={props.totalMotosCount} isEmpty={props.isEmpty}
                  isFetching={props.isFetching}/>
 }
 
@@ -30,4 +30,4 @@ const mstp = (state) => {
     }
 }
 
-export default connect(mstp, {toggleMotoPortion})(MotoContainer);
+export default connect(mstp, {toggleMotoPortion, searchMotos})(MotoContainer);

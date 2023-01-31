@@ -18,5 +18,9 @@ export const API = {
         return instance(`/motorcycles?${data}`)
             .then(response => response.data);
     },
+    getHelicopters: (data) => {
+        return instance(`/helicopter?${data}`)
+            .then(response => response.data);
+    }
 }
 

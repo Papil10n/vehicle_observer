@@ -1,0 +1,32 @@
+.helicopter-article {
+  padding-inline: 30px;
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: "JetBrains Mono";
+  border: 1px solid #1b1f24;
+  border-right: none;
+  border-left: none;
+  background: #c2c7d0;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.helicopter__class {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.helicopter__specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  @media (max-width: 1220px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.spec {
+  margin-bottom: 15px;
+}
+.spec__name {
+  margin-bottom: 5px;
+}

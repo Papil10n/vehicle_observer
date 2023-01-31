@@ -23,11 +23,12 @@
   padding: 10px;
 }
 .closed {
-  margin-inline: 15px;
   max-width: 600px;
-  margin: 0 auto;
   text-align: center;
   border: 1px solid #1b1f24;
+  @media (max-width: 630px) {
+    margin-inline: 15px;
+  }
 }
 .opened {
   margin-top: -20px;

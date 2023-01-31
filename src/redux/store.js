@@ -2,10 +2,13 @@ import {applyMiddleware, combineReducers, compose, createStore} from "redux";
 import thunkMiddleware from "redux-thunk";
 import carsReducer from "./cars-reducer";
 import motoReducer from "./moto-reducer";
+import helicopterReducer from "./helicopter-reducer";
+
 
 let reducers = combineReducers({
     cars: carsReducer,
     moto: motoReducer,
+    helicopters: helicopterReducer,
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
