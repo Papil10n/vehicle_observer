@@ -2,13 +2,13 @@ import "./Moto.scss";
 import MotoInfo from "./MotoInfo/MotoInfo";
 import Preloader from "../common/Preloader/Preloader";
 import Paginator from "../common/Paginator/Paginator";
-import Parameters from "../Parameters/Parameters";
+import ParametersContainer from "../Parameters/ParametersContainer";
 
 const Moto = (props) => {
     const motoItems = props.portionMotos.map((moto, i) => <MotoInfo key={i} spec={moto}/>);
 
     return <section className="moto">
-        <Parameters searchVehicle={props.searchMotos} />
+        <ParametersContainer searchVehicle={props.searchMotos} uri='moto' />
         {props.isEmpty ?
             <div className="empty">THERE ARE NO MOTO, MAYBE YOU HAVE SET THE INCORRECT PARAMETERS</div> :
             props.isFetching ? <Preloader/> : <div>

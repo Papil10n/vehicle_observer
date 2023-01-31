@@ -2,13 +2,13 @@ import Preloader from "../common/Preloader/Preloader";
 import Paginator from "../common/Paginator/Paginator";
 import HelicoptersInfo from "./HelicoptersInfo/HelicoptersInfo";
 import "./Helicopters.scss";
-import Parameters from "../Parameters/Parameters";
+import ParametersContainer from "../Parameters/ParametersContainer";
 
 const Helicopters = (props) => {
     const copterItems = props.portionCopters.map((copter, i) => <HelicoptersInfo key={i} spec={copter}/>);
 
     return <section className="helicopter">
-        <Parameters searchVehicle={props.searchHelicopters}/>
+        <ParametersContainer searchVehicle={props.searchHelicopters} uri='helicopters' />
         {props.isEmpty ?
             <div className="empty">THERE ARE NO HELICOPTERS, MAYBE YOU HAVE SET THE INCORRECT PARAMETERS</div> :
             props.isFetching ? <Preloader/> : <div>
