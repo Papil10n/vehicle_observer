@@ -10,13 +10,14 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    @media (max-width: 1050px) {
+    @media (max-width: 1000px) {
       flex-direction: column;
     }
   }
   &__section {
     flex: 1 1 auto;
     height: 125px;
+    padding-inline: 15px;
     border-radius: 15px;
     border: 1px solid #1b1f24;
     border-right: none;
@@ -24,20 +25,13 @@
     background-color: #c2c7d0;
     margin-inline: 3px;
     @media (max-width: 1050px) {
-      width: 90%;
-      margin-block: 5px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+
     }
     @media (max-width: 700px) {
-      width: auto;
-      flex-direction: column;
-      padding: 67px 20px;
+
     }
     @media (max-width: 400px) {
-      width: auto;
-      padding: 10px;
+
     }
   }
 }
@@ -65,6 +59,31 @@
     option {
       color: #000000;
       font-family: "JetBrains Mono";
+    }
+  }
+}
+.presets__add {
+  display: flex;
+  @media (max-width: 1000px) {
+    width: 660px;
+  }
+  @media (max-width: 680px) {
+    display: none;
+  }
+}
+.presets__main {
+  @media (max-width: 1000px) {
+    margin-bottom: 15px;
+    width: 660px;
+    & input {
+      width: 350px;
+    }
+  }
+  @media (max-width: 680px) {
+    width: 90%;
+    margin-inline: 10px;
+    & input {
+      width: 100%;
     }
   }
 }

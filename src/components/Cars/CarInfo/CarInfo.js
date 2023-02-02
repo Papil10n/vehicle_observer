@@ -4,7 +4,7 @@ import "./carInfo.scss";
 const CarInfo = ({spec}) => {
 
     const convertFuelConsumption = (value) => {
-        return betterUI.number(235.215/value, null);
+        return betterUI.number(235.215/value, 1);
     }
 
     return <article className="car-article">
@@ -16,7 +16,7 @@ const CarInfo = ({spec}) => {
                 <div className="main__spec">
                     <div className="spec">
                         <span className="spec__name">Displacement:</span>
-                        <span className="spec__value">{spec.displacement}</span>
+                        <span className="spec__value">{spec.displacement + " l"}</span>
                     </div>
                     <div className="spec">
                         <span className="spec__name">Transmission:</span>
@@ -45,15 +45,15 @@ const CarInfo = ({spec}) => {
                     </div>
                     <div className="spec spec-abs">
                         <span className="spec__name">City:</span>
-                        <span className="spec__value">{convertFuelConsumption(spec.city_mpg)}</span>
+                        <span className="spec__value">{convertFuelConsumption(spec.city_mpg) + " l"}</span>
                     </div>
                     <div className="spec spec-abs">
                         <span className="spec__name">Combination:</span>
-                        <span className="spec__value">{convertFuelConsumption(spec.combination_mpg)}</span>
+                        <span className="spec__value">{convertFuelConsumption(spec.combination_mpg) + " l"}</span>
                     </div>
                     <div className="spec spec-abs">
                         <span className="spec__name">Highway:</span>
-                        <span className="spec__value">{convertFuelConsumption(spec.highway_mpg)} </span>
+                        <span className="spec__value">{convertFuelConsumption(spec.highway_mpg) + " l"} </span>
                     </div>
                 </div>
             </div>
