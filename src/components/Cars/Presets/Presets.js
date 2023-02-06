@@ -36,7 +36,7 @@ const Presets = (props) => {
     }
 
     const searchAction = () => {
-        props.searchCars({brand,model,year,fuel,transmission,cylinders})
+        props.searchCars({brand, model, year, fuel, transmission, cylinders})
     }
 
     return <div className="presets">
@@ -47,13 +47,17 @@ const Presets = (props) => {
                         <div className="presets__item">
                             <div className="item__text">Brand:</div>
                             <div className="item__input">
-                                <input value={brand} onInput={(e) => {settingValue("brand",e)}} className="input" placeholder="required" type="text"/>
+                                <input value={brand} onInput={(e) => {
+                                    settingValue("brand", e)
+                                }} className="input" placeholder="required" type="text"/>
                             </div>
                         </div>
                         <div className="presets__item">
                             <div className="item__text">Model:</div>
                             <div className="item__input">
-                                <input value={model} onInput={(e) => {settingValue("model",e)}} className="input" placeholder="required" type="text"/>
+                                <input value={model} onInput={(e) => {
+                                    settingValue("model", e)
+                                }} className="input" placeholder="required" type="text"/>
                             </div>
                         </div>
                     </div>
@@ -63,13 +67,17 @@ const Presets = (props) => {
                         <div className="presets__item">
                             <div className="item__text">Year:</div>
                             <div className="item__input">
-                                <input value={year} onInput={(e) => {settingValue("year",e)}} className="input" type="text"/>
+                                <input value={year} onInput={(e) => {
+                                    settingValue("year", e)
+                                }} className="input" type="text"/>
                             </div>
                         </div>
                         <div className="presets__item">
                             <div className="item__text">Fuel:</div>
                             <div className="item__input">
-                                <select value={fuel} onInput={(e) => {settingValue("fuel",e)}} className="input">
+                                <select value={fuel} onInput={(e) => {
+                                    settingValue("fuel", e)
+                                }} className="input">
                                     <option value=""></option>
                                     <option value="gas">Gas</option>
                                     <option value="diesel">Diesel</option>
@@ -82,7 +90,9 @@ const Presets = (props) => {
                         <div className="presets__item">
                             <div className="item__text">Transmission:</div>
                             <div className="item__input">
-                                <select value={transmission} onInput={(e) => {settingValue("transmission",e)}} className="input input-small">
+                                <select value={transmission} onInput={(e) => {
+                                    settingValue("transmission", e)
+                                }} className="input input-small">
                                     <option value=""></option>
                                     <option value="awd">AWD</option>
                                     <option value="4wd">4WD</option>
@@ -94,7 +104,9 @@ const Presets = (props) => {
                         <div className="presets__item">
                             <div className="item__text">Cylinders:</div>
                             <div className="item__input">
-                                <select value={cylinders} onInput={(e) => {settingValue("cylinders",e)}} className="input input-medium">
+                                <select value={cylinders} onInput={(e) => {
+                                    settingValue("cylinders", e)
+                                }} className="input input-medium">
                                     <option value=""></option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>

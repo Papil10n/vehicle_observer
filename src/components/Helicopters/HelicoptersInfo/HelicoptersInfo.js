@@ -19,23 +19,28 @@ const HelicoptersInfo = ({spec}) => {
             </div>
             <div className="spec">
                 <div className="spec__name">Full speed:</div>
-                <div className="spec__value">{spec.max_speed_sl_knots ? convertValue(spec.max_speed_sl_knots, 1.852, 0) + " km/h" : "N/A"}</div>
+                <div
+                    className="spec__value">{spec.max_speed_sl_knots ? convertValue(spec.max_speed_sl_knots, 1.852, 0) + " km/h" : "N/A"}</div>
             </div>
             <div className="spec">
                 <div className="spec__name">Height:</div>
-                <div className="spec__value">{spec.height_ft ? convertValue(spec.height_ft, 0.3048, 2) + " m" : "N/A"}</div>
+                <div
+                    className="spec__value">{spec.height_ft ? convertValue(spec.height_ft, 0.3048, 2) + " m" : "N/A"}</div>
             </div>
             <div className="spec">
                 <div className="spec__name">Cruise speed:</div>
-                <div className="spec__value">{spec.cruise_speed_sl_knots ? convertValue(spec.cruise_speed_sl_knots, 1.852, 0) + " km/h" : "N/A"}</div>
+                <div
+                    className="spec__value">{spec.cruise_speed_sl_knots ? convertValue(spec.cruise_speed_sl_knots, 1.852, 0) + " km/h" : "N/A"}</div>
             </div>
             <div className="spec">
                 <div className="spec__name">Length:</div>
-                <div className="spec__value">{spec.length_ft ? convertValue(spec.length_ft, 0.3048, 2) + " m" : "N/A"}</div>
+                <div
+                    className="spec__value">{spec.length_ft ? convertValue(spec.length_ft, 0.3048, 2) + " m" : "N/A"}</div>
             </div>
             <div className="spec">
                 <div className="spec__name">Main rotor diameter:</div>
-                <div className="spec__value">{spec.main_rotor_diameter_ft ? convertValue(spec.main_rotor_diameter_ft, 0.3048, 2) + " m" : "N/A"}</div>
+                <div
+                    className="spec__value">{spec.main_rotor_diameter_ft ? convertValue(spec.main_rotor_diameter_ft, 0.3048, 2) + " m" : "N/A"}</div>
             </div>
             <div className="spec">
                 <div className="spec__name">Number of blades:</div>
@@ -47,11 +52,13 @@ const HelicoptersInfo = ({spec}) => {
             </div>
             <div className="spec">
                 <div className="spec__name">Fuel consumption:</div>
-                <div className="spec__value">{spec.fuel_consumption_gallons_pr_hr ? convertValue(spec.fuel_consumption_gallons_pr_hr, 3.78541, 0) + " lph" : "N/A"}</div>
+                <div
+                    className="spec__value">{spec.fuel_consumption_gallons_pr_hr ? convertValue(spec.fuel_consumption_gallons_pr_hr, 3.78541, 0) + " lph" : "N/A"}</div>
             </div>
             <div className="spec">
                 <div className="spec__name">Fuel capacity:</div>
-                <div className="spec__value">{spec.fuel_capacity_gallons ? convertValue(spec.fuel_capacity_gallons, 3.78541, 0) + " l" : "N/A"}</div>
+                <div
+                    className="spec__value">{spec.fuel_capacity_gallons ? convertValue(spec.fuel_capacity_gallons, 3.78541, 0) + " l" : "N/A"}</div>
             </div>
         </div>
     </article>

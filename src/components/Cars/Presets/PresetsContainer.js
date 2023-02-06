@@ -4,12 +4,11 @@ import {searchCars} from "../../../redux/cars-reducer";
 
 const PresetsContainer = (props) => {
 
-    return <Presets searchCars={props.searchCars} />
+    return <Presets searchCars={props.searchCars}/>
 }
 
 const mstp = (state) => {
-    return {
-    }
+    return {}
 }
 
 export default connect(mstp, {searchCars})(PresetsContainer);
